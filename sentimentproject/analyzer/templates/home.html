@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+</head>
+<body>
+
+<h1>Sentiment Analyzer</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <textarea name="text" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <button type="submit">
+        Analyze
+    </button>
+</form>
+
+<h2>{{ result }}</h2>
+
+</body>
+</html>
